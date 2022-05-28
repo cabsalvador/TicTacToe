@@ -15,6 +15,6 @@ struct AlertPrompt: Equatable {
 
 extension AlertPrompt {
     static let player1 = AlertPrompt(title: "Player 1 Wins!", message: "Good job!", buttonTitle: "Play again.")
-    static let player2 = AlertPrompt(title: "Player 1 Wins!", message: "Good job!", buttonTitle: "Play again.")
-    static let tie =  AlertPrompt(title: "Player 1 Wins!", message: "Good job!", buttonTitle: "Play again.")
+    static let player2 = AlertPrompt(title: "Player 2 Wins!", message: "Good job!", buttonTitle: "Play again.")
+    static let tie =  AlertPrompt(title: "Tie", message: "Try again", buttonTitle: "Play again.")
 }

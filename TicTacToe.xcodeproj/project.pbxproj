@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E7E276A2841E4EE00EBAFE2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E27692841E4EE00EBAFE2 /* Color.swift */; };
 		3ECD5D5A28404DB700B54199 /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D5928404DB700B54199 /* TicTacToeApp.swift */; };
 		3ECD5D5E28404DB800B54199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ECD5D5D28404DB800B54199 /* Assets.xcassets */; };
 		3ECD5D6128404DB800B54199 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ECD5D6028404DB800B54199 /* Preview Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E7E27692841E4EE00EBAFE2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		3ECD5D5628404DB700B54199 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECD5D5928404DB700B54199 /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
 		3ECD5D5D28404DB800B54199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				3ECD5D7E2841A6B000B54199 /* MainView.swift */,
 				3ECD5D772841716800B54199 /* Models */,
 				3ECD5D7528408F1000B54199 /* TicTacToeGame.swift */,
+				3E7E27692841E4EE00EBAFE2 /* Color.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				3ECD5D6628404DB800B54199 /* TicTacToe.xcdatamodeld in Sources */,
 				3ECD5D7F2841A6B000B54199 /* MainView.swift in Sources */,
 				3ECD5D70284051A700B54199 /* BoardView.swift in Sources */,
+				3E7E276A2841E4EE00EBAFE2 /* Color.swift in Sources */,
 				3ECD5D792841717500B54199 /* Player.swift in Sources */,
 				3ECD5D7D28418C6400B54199 /* Outcome.swift in Sources */,
 				3ECD5D7B2841717D00B54199 /* GamePiece.swift in Sources */,

@@ -29,20 +29,31 @@ final class TicTacToeGame: ObservableObject {
         game.players
     }
     
-    var alertPromt: AlertPrompt {
-        if let outcome = game.outcome {
-            
-            switch outcome {
-            case .player1Wins:
-                return AlertPrompt.player1
-            case .player2Wins:
-                return AlertPrompt.player2
-            case .tie:
-                return AlertPrompt.tie
-            }
-        }
-        return AlertPrompt.tie
+    var player1: Player {
+        game.player1
     }
+    
+    var player2: Player {
+        game.player2
+    }
+    
+    var gameOver: Bool {
+        game.gameOver
+    }
+    
+//    var alertPrompt: AlertPrompt {
+//        if let outcome = game.outcome {
+//            switch outcome {
+//            case .player1Wins:
+//                return AlertPrompt.player1
+//            case .player2Wins:
+//                return AlertPrompt.player2
+//            case .tie:
+//                return AlertPrompt.tie
+//            }
+//        }
+//        return
+//    }
     
     // MARK - Functions
     

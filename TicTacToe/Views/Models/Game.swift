@@ -14,6 +14,7 @@ struct Game {
     private(set) var players: [Player] = []
     private(set) var outcome: Outcome?
     private(set) var totalMoves = 0
+    private(set) var gameOver = false
     private let winningConditions: [Set] = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8], // Horizontal win conditions
         [0, 3, 6], [1, 4, 7], [3, 5, 8], // Veritical win conditions
@@ -25,6 +26,14 @@ struct Game {
         self.players.append(player1)
         self.players.append(player2)
         selectedPlayer = 0
+    }
+    
+    var player1: Player {
+        players[0]
+    }
+    
+    var player2: Player {
+        players[1]
     }
     
     private mutating func toggleNextPlayer() {
@@ -46,9 +55,15 @@ struct Game {
     
     mutating func checkForOutcome() {
         if totalMoves >= 5 {
-            checkWinConditions()
+            if checkWinConditions() {
+                players[selectedPlayer].score += 1
+                gameOver = true
+                print("Player \(selectedPlayer + 1) wins!")
+            }
             if outcomeIsTie() {
                 outcome = .tie
+                gameOver = true
+                print("Tie. Try again.")
             }
         }
     }
@@ -62,9 +77,11 @@ struct Game {
     
     mutating func newGame() {
         board = Array(repeating: nil, count: 9)
+        selectedPlayer = 0
+        gameOver = false
     }
     
-    func checkWinConditions() {
+    func checkWinConditions() -> Bool {
         // Filter all gamepieces in play of the current player, then filter the id's of the pieces.
         let filteredBoard = Set(board.filter { $0?.sfSymbol == players[selectedPlayer].sfSymbol }.compactMap { $0?.id })
         
@@ -72,18 +89,19 @@ struct Game {
         for condition in winningConditions {
             // Match found
             if condition.isSubset(of: filteredBoard) {
-                print("Match found!")
+                return true
             }
         }
-    }
-    
-    private mutating func results() {
-        players[selectedPlayer].score += 1
+        return false
     }
     
     private func outcomeIsTie() -> Bool {
         // No spots remain
         guard board.filter({ $0 == nil }).count == 0 else { return false }
         return true
+    }
+    
+    private mutating func results() {
+        players[selectedPlayer].score += 1
     }
 }
