@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GamePiece {
+    private(set) var id: Int
     private(set) var sfSymbol: String
     private(set) var color: Color
 }

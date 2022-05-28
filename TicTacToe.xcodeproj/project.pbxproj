@@ -12,12 +12,14 @@
 		3ECD5D6128404DB800B54199 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ECD5D6028404DB800B54199 /* Preview Assets.xcassets */; };
 		3ECD5D6328404DB800B54199 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D6228404DB800B54199 /* Persistence.swift */; };
 		3ECD5D6628404DB800B54199 /* TicTacToe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D6428404DB800B54199 /* TicTacToe.xcdatamodeld */; };
-		3ECD5D6E28404E0C00B54199 /* GameCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D6D28404E0C00B54199 /* GameCellView.swift */; };
 		3ECD5D70284051A700B54199 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D6F284051A700B54199 /* BoardView.swift */; };
 		3ECD5D72284057E800B54199 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D71284057E800B54199 /* Game.swift */; };
 		3ECD5D7628408F1000B54199 /* TicTacToeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D7528408F1000B54199 /* TicTacToeGame.swift */; };
 		3ECD5D792841717500B54199 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D782841717500B54199 /* Player.swift */; };
 		3ECD5D7B2841717D00B54199 /* GamePiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D7A2841717D00B54199 /* GamePiece.swift */; };
+		3ECD5D7D28418C6400B54199 /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D7C28418C6400B54199 /* Outcome.swift */; };
+		3ECD5D7F2841A6B000B54199 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D7E2841A6B000B54199 /* MainView.swift */; };
+		3ECD5D812841A9EE00B54199 /* AlertPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5D802841A9EE00B54199 /* AlertPrompt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,12 +29,14 @@
 		3ECD5D6028404DB800B54199 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3ECD5D6228404DB800B54199 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3ECD5D6528404DB800B54199 /* TicTacToe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TicTacToe.xcdatamodel; sourceTree = "<group>"; };
-		3ECD5D6D28404E0C00B54199 /* GameCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCellView.swift; sourceTree = "<group>"; };
 		3ECD5D6F284051A700B54199 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		3ECD5D71284057E800B54199 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3ECD5D7528408F1000B54199 /* TicTacToeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeGame.swift; sourceTree = "<group>"; };
 		3ECD5D782841717500B54199 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		3ECD5D7A2841717D00B54199 /* GamePiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePiece.swift; sourceTree = "<group>"; };
+		3ECD5D7C28418C6400B54199 /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
+		3ECD5D7E2841A6B000B54199 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3ECD5D802841A9EE00B54199 /* AlertPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPrompt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +90,8 @@
 		3ECD5D6C28404DD800B54199 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3ECD5D6D28404E0C00B54199 /* GameCellView.swift */,
 				3ECD5D6F284051A700B54199 /* BoardView.swift */,
+				3ECD5D7E2841A6B000B54199 /* MainView.swift */,
 				3ECD5D772841716800B54199 /* Models */,
 				3ECD5D7528408F1000B54199 /* TicTacToeGame.swift */,
 			);
@@ -100,6 +104,8 @@
 				3ECD5D71284057E800B54199 /* Game.swift */,
 				3ECD5D782841717500B54199 /* Player.swift */,
 				3ECD5D7A2841717D00B54199 /* GamePiece.swift */,
+				3ECD5D7C28418C6400B54199 /* Outcome.swift */,
+				3ECD5D802841A9EE00B54199 /* AlertPrompt.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,10 +183,12 @@
 				3ECD5D6328404DB800B54199 /* Persistence.swift in Sources */,
 				3ECD5D72284057E800B54199 /* Game.swift in Sources */,
 				3ECD5D6628404DB800B54199 /* TicTacToe.xcdatamodeld in Sources */,
+				3ECD5D7F2841A6B000B54199 /* MainView.swift in Sources */,
 				3ECD5D70284051A700B54199 /* BoardView.swift in Sources */,
 				3ECD5D792841717500B54199 /* Player.swift in Sources */,
-				3ECD5D6E28404E0C00B54199 /* GameCellView.swift in Sources */,
+				3ECD5D7D28418C6400B54199 /* Outcome.swift in Sources */,
 				3ECD5D7B2841717D00B54199 /* GamePiece.swift in Sources */,
+				3ECD5D812841A9EE00B54199 /* AlertPrompt.swift in Sources */,
 				3ECD5D5A28404DB700B54199 /* TicTacToeApp.swift in Sources */,
 				3ECD5D7628408F1000B54199 /* TicTacToeGame.swift in Sources */,
 			);
